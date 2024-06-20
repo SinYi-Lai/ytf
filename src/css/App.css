@@ -1,0 +1,625 @@
+html,
+body,
+#root {
+  min-height: 100%;
+  height: 100vh;
+}
+
+body {
+  background-color: #0F0F0F;
+}
+
+* {
+  box-sizing: border-box;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+*::-moz-selection {
+  background-color: transparent;
+}
+*::selection {
+  background-color: transparent;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.progress {
+  margin: 8px auto 19px;
+  width: 85%;
+  height: 8px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+.progress .progress-bar {
+  height: 8px;
+  background-color: #0F0F0F;
+  border-radius: 8px;
+}
+
+img,
+svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.yt_red {
+  width: 39px;
+  position: absolute;
+  top: 44px;
+  right: 33px;
+}
+
+.yt_white {
+  width: 99px;
+  position: absolute;
+  bottom: 35px;
+  right: 50%;
+  transform: translate(50%);
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+}
+.App .greybg {
+  width: 100%;
+  height: 100%;
+}
+.App .greybg .container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 450px;
+  min-width: 375px;
+  height: 100%;
+  min-height: 667px;
+  position: relative;
+}
+.App .greybg .container .wrap {
+  height: 100%;
+  width: 100%;
+}
+.App .greybg .container .wrap .start {
+  position: relative;
+  background-color: #0F0F0F;
+  background-image: url("https://oss.uppmkt.com/202308/ytfg/spotlight.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 100%;
+  width: 100%;
+  max-height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.App .greybg .container .wrap .start .start_en {
+  font-size: 112px;
+  line-height: 1;
+}
+.App .greybg .container .wrap .start .start_tc {
+  font-size: 25px;
+  font-weight: 700;
+}
+.App .greybg .container .wrap .start .start_btn {
+  margin-top: 30px;
+  display: inline-block;
+  background-color: #0F0F0F;
+  padding: 15px 30px 15px 40px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.App .greybg .container .wrap .start .start_btn:hover, .App .greybg .container .wrap .start .start_btn:active, .App .greybg .container .wrap .start .start_btn:focus {
+  transition: 0.5s;
+  background-color: #FF4E45;
+}
+.App .greybg .container .wrap .start .start_btn .start_btn_text {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 700;
+}
+.App .greybg .container .wrap .start .start_btn .start_btn_icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  margin-left: 5px;
+  margin-top: 2px;
+}
+.App .greybg .container .wrap .game0 {
+  position: relative;
+  background-color: #0F0F0F;
+  background-image: url("https://oss.uppmkt.com/202308/ytfg/star1.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: left top;
+  height: 100%;
+  width: 100%;
+  max-height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.App .greybg .container .wrap .game0 .game0_title_en {
+  font-size: 47px;
+  text-transform: uppercase;
+  color: #FF8D40;
+  line-height: 1;
+}
+.App .greybg .container .wrap .game0 .game0_title_tc {
+  font-size: 29px;
+  font-weight: 700;
+  color: #FF8D40;
+  margin-bottom: 20px;
+}
+.App .greybg .container .wrap .game0 .game0_intro {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  padding: 0 20px;
+  margin-top: 10px;
+}
+.App .greybg .container .wrap .game0 .game0_intro .orange {
+  color: #FF8D40;
+}
+.App .greybg .container .wrap .game0 .game0_notice {
+  color: #9AA0A6;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 50px;
+}
+.App .greybg .container .wrap .game0 .game0_hand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+}
+.App .greybg .container .wrap .game_container {
+  position: relative;
+  background-image: url("https://oss.uppmkt.com/202308/ytfg/star2.svg"), linear-gradient(141deg, #FF7043 5.02%, #FF4E45 79.67%);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: left bottom;
+  height: 100%;
+  width: 100%;
+  max-height: 800px;
+  padding: 20px 0 0;
+}
+.App .greybg .container .wrap .game_container .game_back {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.App .greybg .container .wrap .game_container .game_back .game_back_arrow {
+  width: 6px;
+  margin-right: 5px;
+}
+.App .greybg .container .wrap .game_container .game_back .game_back_arrow svg {
+  width: 100%;
+}
+.App .greybg .container .wrap .game_container .game_back .game_back_text {
+  font-size: 12px;
+  font-weight: 500;
+  color: #0F0F0F;
+}
+.App .greybg .container .wrap .game_container .game_card {
+  height: calc(100% - 140px);
+  width: 85%;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #0F0F0F;
+  background-image: url("https://oss.uppmkt.com/202308/ytfg/star1.svg");
+  background-repeat: no-repeat;
+  background-position: left bottom -145px;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 30px;
+}
+.App .greybg .container .wrap .game_container .game_card .game_i {
+  width: 100%;
+  font-size: 50px;
+  color: #FF8D40;
+  text-align: left;
+}
+.App .greybg .container .wrap .game_container .game_card .game_q {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0px 0px 40px;
+  min-height: 81px;
+}
+.App .greybg .container .wrap .game_container .game_card .game_a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: auto;
+  min-width: 85%;
+  max-width: 95%;
+  position: relative;
+  min-height: 110px;
+}
+.App .greybg .container .wrap .game_container .game_card .game_a .game_a_i {
+  width: 120px;
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.App .greybg .container .wrap .game_container .game_card .game_a .game_a_text {
+  color: #0F0F0F;
+  font-size: 14px;
+  font-weight: 700;
+  width: 100%;
+  background-color: white;
+  padding: 10px 15px 10px 80px;
+  border-radius: 10px;
+}
+.App .greybg .container .wrap .game_container .game_card .game_a:hover .game_a_text, .App .greybg .container .wrap .game_container .game_card .game_a:active .game_a_text, .App .greybg .container .wrap .game_container .game_card .game_a:focus .game_a_text {
+  transition: 0.5s;
+  background-color: #FF8D40;
+}
+.App .greybg .container .wrap .fbx_box {
+  position: relative;
+  background-color: #0F0F0F;
+  background-image: url("https://oss.uppmkt.com/202308/ytfg/star1.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: left -5px bottom -150px;
+  height: 100%;
+  width: 100%;
+  max-height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.App .greybg .container .wrap .fbx_box .yt_red {
+  top: 30px;
+}
+.App .greybg .container .wrap .fbx_box .yt_white {
+  bottom: 26px;
+}
+.App .greybg .container .wrap .fbx_box .fbx_title_en {
+  text-transform: uppercase;
+  font-size: 47px;
+  color: #FF8D40;
+  line-height: 1.05;
+}
+.App .greybg .container .wrap .fbx_box .fbx_title_tc {
+  font-size: 22px;
+  font-weight: 700;
+  color: #FF8D40;
+}
+.App .greybg .container .wrap .fbx_box .fbx_title_intro {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 10px 0 20px;
+}
+.App .greybg .container .wrap .fbx_box .fbx_form_container .fbx_form_question {
+  margin-bottom: 20px;
+  width: 240px;
+}
+.App .greybg .container .wrap .fbx_box .fbx_form_container .fbx_form_question .fbx_form_textInput {
+  width: 100%;
+}
+.App .greybg .container .wrap .fbx_box .fbx_form_container .fbx_form_question .fbx_form_textInput .MuiFormLabel-root {
+  font-size: 15px;
+  font-weight: 500;
+  color: #FFAC73;
+}
+.App .greybg .container .wrap .fbx_box .fbx_form_container .fbx_form_question .fbx_form_textInput .MuiInputBase-root::before {
+  border-bottom: 1px solid #FFEACF;
+}
+.App .greybg .container .wrap .fbx_box .fbx_form_container .fbx_form_question .fbx_form_textInput .MuiInputBase-root::after {
+  border-bottom: 1px solid #FF8D40;
+}
+.App .greybg .container .wrap .fbx_box .fbx_form_container .fbx_form_question .fbx_form_textInput .MuiInputBase-root .MuiInputBase-input {
+  padding: 5px 24px 6px 0;
+  color: #ffffff;
+}
+.App .greybg .container .wrap .fbx_box .errorMsg {
+  color: #FF0000;
+  font-size: 13px;
+  font-weight: 500;
+}
+.App .greybg .container .wrap .fbx_box .fbx_btn {
+  margin-top: 15px;
+  display: inline-block;
+  background-image: linear-gradient(180deg, #FF8D40 0%, #FF4E45 100%);
+  padding: 15px 60px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.App .greybg .container .wrap .fbx_box .fbx_btn:hover, .App .greybg .container .wrap .fbx_box .fbx_btn:active, .App .greybg .container .wrap .fbx_box .fbx_btn:focus {
+  transition: 0.5s;
+  background-color: #FF4E45;
+}
+.App .greybg .container .wrap .fbx_box .fbx_btn .fbx_btn_text {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 700;
+}
+.App .greybg .container .wrap .result_bg {
+  background-color: #0F0F0F;
+  background-image: url("https://oss.uppmkt.com/202308/ytfg/rbg.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center top 3%;
+  width: 100%;
+  height: 400vw;
+  max-height: 1800px;
+  min-height: 1500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.App .greybg .container .wrap .result_bg .result_resultImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  z-index: 2;
+}
+.App .greybg .container .wrap .result_bg .result_top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 26px;
+  background-image: linear-gradient(269deg, #FF8D40 11.65%, #FF4E45 91.37%);
+  font-size: 10px;
+  font-weight: 500;
+}
+.App .greybg .container .wrap .result_bg .result_top svg {
+  width: 8px;
+  height: 8px;
+  margin: 0 10px;
+}
+.App .greybg .container .wrap .result_bg .result_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 25px 70px;
+}
+.App .greybg .container .wrap .result_bg .result_container .result_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.App .greybg .container .wrap .result_bg .result_container .result_box .result_icon {
+  animation: wiggle 3s linear infinite;
+  width: 166px;
+  height: 166px;
+}
+.App .greybg .container .wrap .result_bg .result_container .result_box .result_name {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 5px 0;
+}
+.App .greybg .container .wrap .result_bg .result_container .result_box .result_content {
+  width: 100%;
+}
+.App .greybg .container .wrap .result_bg .result_container a {
+  text-decoration: none;
+}
+.App .greybg .container .wrap .result_bg .result_container a .result_more {
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.App .greybg .container .wrap .result_bg .result_container a .result_more svg {
+  animation: wiggleDown 3s linear infinite;
+  width: 26px;
+  margin-top: 30px;
+}
+.App .greybg .container .wrap .result_bg .result_container .result_more_container .result_more_box {
+  width: 100%;
+  border: 1.5px solid #ffffff;
+  border-radius: 10px;
+  padding: 25px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.App .greybg .container .wrap .result_bg .result_container .result_more_container .result_more_box .result_more_en {
+  font-size: 30px;
+  background: linear-gradient(92deg, #FF8D40 5.69%, #FF4E45 99.79%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+  margin-bottom: 3px;
+}
+.App .greybg .container .wrap .result_bg .result_container .result_more_container .result_more_box .result_more_tc {
+  font-size: 15px;
+  font-weight: 700;
+  background: linear-gradient(180deg, #FF8D40 0%, #FF4E45 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.App .greybg .container .wrap .result_bg .result_container .result_more_container .result_more_box .result_more_text {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  margin: 10px 0 20px;
+}
+.App .greybg .container .wrap .result_bg .result_container .result_more_container .result_more_box .result_more_photo {
+  width: 90%;
+}
+.App .greybg .container .wrap .result_bg .result_container .result_more_container .result_more_end {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.formula_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0F0F0F;
+  background-image: url("https://oss.uppmkt.com/202308/ytfg/star1.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: left top;
+  height: 100%;
+  width: 100%;
+  max-height: 800px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.formula_box .formula_t1,
+.formula_box .formula_content {
+  font-weight: 700;
+  color: #FF8D40;
+}
+.formula_box .formula_t1 {
+  font-size: 50px;
+  line-height: 1.3;
+}
+.formula_box .formula_content {
+  font-size: 29px;
+}
+.formula_box .formula_award {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 28px 0 25px;
+}
+.formula_box .formula_img {
+  width: 335px;
+}
+.formula_box .formula_notice {
+  margin: 60px 0 0;
+  font-size: 14px;
+  color: #9AA0A6;
+}
+.formula_box .formula_hand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+}
+
+.result_loading_box {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 190vw;
+  min-height: 600px;
+  max-height: 850px;
+  overflow: hidden;
+}
+.result_loading_box .result_loading_lottie {
+  width: 100%;
+}
+.result_loading_box .result_yt_lottie {
+  position: absolute;
+  width: 99px;
+  bottom: 70px;
+  right: 50%;
+  transform: translate(50%);
+}
+
+.css-1ka5eyc-MuiPaper-root-MuiMenu-paper-MuiPopover-paper {
+  max-height: calc(75% - 32px) !important;
+}
+
+/* Keyframes */
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+@keyframes wiggleDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-10px);
+  }
+  20% {
+    transform: translateY(10px);
+  }
+  30% {
+    transform: translateY(-6px);
+  }
+  40% {
+    transform: translateY(4px);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  60% {
+    transform: translateY(1px);
+  }
+  70% {
+    transform: translateY(-1px);
+  }
+  80%, 90% {
+    transform: translateY(0);
+  }
+}
